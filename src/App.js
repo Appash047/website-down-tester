@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 export default function App() {
   const [url, setUrl] = useState('');
@@ -87,6 +88,7 @@ export default function App() {
           ⚠️ This tool is for educational purposes only. A maximum of 100 requests is allowed.
         </p>
       </div>
+      <SpeedInsights />
     </div>
   );
 }
