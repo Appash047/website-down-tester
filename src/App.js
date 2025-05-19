@@ -18,7 +18,7 @@ export default function App() {
       setIsSending(true);
       setSentRequests(0);
 
-      const response = await fetch('http://localhost:8080/api/send-requests', {
+      const response = await fetch('http://51.21.160.142:8080/api/send-requests', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url, count: countLimit }),
