@@ -66,7 +66,7 @@ export default function App() {
           />
           <input
             type="number"
-            placeholder="Number of requests (Max 100)"
+            placeholder="Requests (Max 100)"
             className="w-48 p-3 rounded-lg bg-black bg-opacity-50 text-lime-200 placeholder-lime-500 border border-lime-500 focus:outline-none focus:ring-2 focus:ring-lime-400"
             value={requestCount}
             onChange={(e) => setRequestCount(e.target.value)}
@@ -84,9 +84,9 @@ export default function App() {
         <div className="text-lime-300 text-center font-mono text-lg mb-2">
           Requests Sent: <span className="text-lime-400 font-semibold">{sentRequests}</span>
         </div>
-        <p className="text-center text-sm text-lime-400 font-mono">
-          ⚠️ This tool is for educational purposes only. A maximum of 100 requests is allowed.
-        </p>
+        <p className="text-center text-sm text-red-500 font-mono">
+  ⚠️ This tool is for educational purposes only. A maximum of 100 requests is allowed.
+</p>
       </div>
       <SpeedInsights />
     </div>
