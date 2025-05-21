@@ -17,8 +17,8 @@ export default function App() {
     try {
       setIsSending(true);
       setSentRequests(0);
-
-      const response = await fetch('https://ff88-13-48-42-168.ngrok-free.app/api/send-requests', {        method: 'POST',
+      const response = await fetch('https://a00b-13-48-42-168.ngrok-free.app/api/send-requests', {
+        method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url, count: countLimit }),
       });
