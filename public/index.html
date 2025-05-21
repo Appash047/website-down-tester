@@ -3,59 +3,51 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="%PUBLIC_URL%/favicon.png" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Check if a website is down for everyone or just you. Simulate up to 100 requests with this free tool."
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <title>Website Down Tester</title>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Website Down Tester</title> 
-   
+    <!-- AdSense Auto Ads -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5744443209373804"
      crossorigin="anonymous"></script>
-  
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
     <main style="padding: 2rem; font-family: sans-serif; max-width: 800px; margin: auto;">
       <h1>Website Down Tester</h1>
-      <p>This tool helps you check if a website is down for everyone or just you. Simply enter the URL of the website you want to check, and we'll simulate traffic to help you determine its status.</p>
+      <p>This tool helps you check if a website is down for everyone or just you. Simply enter the URL and simulate a limited number of requests (max 100) to monitor uptime.</p>
+
       <h2>How It Works</h2>
       <ul>
-        <li>Enter the target website URL</li>
-        <li>Choose how many requests you want to send (max 100)</li>
-        <li>Click "Start" to simulate the requests</li>
+        <li>Enter the full URL of the website you want to test.</li>
+        <li>Choose the number of requests (up to 100).</li>
+        <li>Click "Start" to send the requests and view progress.</li>
       </ul>
+
       <h2>Disclaimer</h2>
-      <p>This tool is intended strictly for educational and testing purposes. It does not promote or allow misuse or abuse of web traffic.</p>
+      <p>This tool is intended strictly for educational and diagnostic purposes only. Misuse of this tool for denial-of-service (DoS) or abuse is not allowed and not supported.</p>
+
+      <h2>Privacy Policy</h2>
+      <p>We do not collect any personal data. This tool does not log your input or activity. Third-party services like Google AdSense may use cookies to serve ads.</p>
+
       <h2>Contact</h2>
-      <p>If you have feedback or suggestions, reach out to us at <a href="mailto:contact@example.com">contact@example.com</a>.</p>
+      <p>If you have any questions or suggestions, please reach out at <a href="mailto:contact@example.com">contact@example.com</a>.</p>
     </main>
+
+    <footer style="text-align: center; font-size: 0.9rem; color: #555; padding: 1rem;">
+      <a href="#" style="margin: 0 10px;">Home</a>
+      <a href="#" style="margin: 0 10px;">Privacy Policy</a>
+      <a href="mailto:contact@example.com" style="margin: 0 10px;">Contact</a>
+      <p style="margin-top: 10px;">© 2025 Website Down Tester</p>
+    </footer>
+
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
