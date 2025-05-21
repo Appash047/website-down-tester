@@ -54,6 +54,22 @@ export default function App() {
         backgroundSize: "cover"
       }}
     >
+      <div className="bg-white bg-opacity-90 p-6 mb-6 rounded-lg shadow-md max-w-2xl text-black text-sm">
+        <h2 className="text-xl font-semibold mb-2">About This Tool</h2>
+        <p>
+          Website Down Tester helps you check if a website is down for everyone or just you. Enter a URL and select the number of simulated requests (up to 100). This tool is designed for educational and diagnostic purposes only.
+        </p>
+        <h3 className="text-lg font-semibold mt-4 mb-1">How It Works</h3>
+        <ul className="list-disc list-inside">
+          <li>Enter the full URL of the website you want to test.</li>
+          <li>Select the number of requests (between 1 and 100).</li>
+          <li>Click “Start” to send requests and monitor how many are sent.</li>
+        </ul>
+        <h3 className="text-lg font-semibold mt-4 mb-1">Disclaimer</h3>
+        <p>
+          This simulator does not perform any malicious activity. It's built solely for testing response behavior under light loads.
+        </p>
+      </div>
       <div className="bg-black bg-opacity-70 backdrop-blur-md p-8 rounded-2xl shadow-2xl max-w-2xl w-full border border-lime-400">
         <h1 className="text-3xl text-lime-400 font-mono font-bold text-center mb-6">Load Testing Simulator</h1>
         <div className="flex flex-col md:flex-row gap-4 mb-6">
@@ -85,8 +101,8 @@ export default function App() {
           Requests Sent: <span className="text-lime-400 font-semibold">{sentRequests}</span>
         </div>
         <p className="text-center text-sm text-red-500 font-mono">
-  ⚠️ This tool is for educational purposes only. A maximum of 100 requests is allowed.
-</p>
+          ⚠️ This tool is for educational purposes only. A maximum of 100 requests is allowed.
+        </p>
       </div>
       <SpeedInsights />
     </div>
