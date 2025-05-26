@@ -17,7 +17,7 @@ export default function App() {
     try {
       setIsSending(true);
       setSentRequests(0);
-      const response = await fetch('https://guardian-drug-no-scanner.trycloudflare.com/api/send-requests', {
+      const response = await fetch('https://discusses-sin-produce-task.trycloudflare.com/api/send-requests', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ url, count: countLimit }),
