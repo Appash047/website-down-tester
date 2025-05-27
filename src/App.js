@@ -86,7 +86,7 @@ export default function App() {
           Requests Sent: <span className="text-lime-400 font-semibold">{sentRequests}</span>
         </div>
         <p className="text-center text-sm text-red-500 font-mono">
-  ⚠️ This tool is for educational purposes only. A maximum of 100 requests is allowed.
+  ⚠️ This tool is for educational purposes only. Any site can face server overload, so we limit it to 100 requests only.
 </p>
       </div>
       <SpeedInsights />
