@@ -24,11 +24,17 @@ export default function App() {
       });
 
       if (response.ok) {
-        // Wait a short moment for backend to complete
-        setTimeout(() => {
-          setSentRequests(countLimit);
-          setIsSending(false);
-        }, 500);
+        // Simulate fast counting effect
+        let counter = 0;
+        const speed = Math.max(10, 1000 / countLimit); // Adjust speed based on count
+        const interval = setInterval(() => {
+          counter++;
+          setSentRequests(prev => prev + 1);
+          if (counter >= countLimit) {
+            clearInterval(interval);
+            setIsSending(false);
+          }
+        }, speed);
       } else {
         alert("Backend error. Try again.");
         setIsSending(false);
