@@ -24,15 +24,11 @@ export default function App() {
       });
 
       if (response.ok) {
-        let counter = 0;
-        const interval = setInterval(() => {
-          counter++;
-          setSentRequests(prev => prev + 1);
-          if (counter >= countLimit) {
-            clearInterval(interval);
-            setIsSending(false);
-          }
-        }, 100);
+        // Wait a short moment for backend to complete
+        setTimeout(() => {
+          setSentRequests(countLimit);
+          setIsSending(false);
+        }, 500);
       } else {
         alert("Backend error. Try again.");
         setIsSending(false);
